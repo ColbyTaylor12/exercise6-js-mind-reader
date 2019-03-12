@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font awesome stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+
+      <div id="Page1">
+          Content of page 1
+          <a href="#" onclick="return show('Page2','Page1');">Next</a>
+        </div>
+      
+        <div id="Page2" style="display:none">
+          Content of page 2
+          <a href="#" onclick="return show('Page3','Page2');">Next</a>
+          <a href="#" onclick="return show('Page1','Page2');">Start Over</a>
+        </div>
+      
+        <div id="Page3" style="display:none">
+            Content of page 3
+            <a href="#" onclick="return show('Page4','Page3');">Next</a>
+            <a href="#" onclick="return show('Page1','Page3');">Start Over</a>
+          </div>
+
+          <div id="Page4" style="display:none">
+              Content of page 4
+              <a href="#" onclick="return show('Page5','Page4');">Next</a>
+              <a href="#" onclick="return show('Page1','Page4');">Start Over</a>
+            </div>
+
+            <div id="Page5" style="display:none">
+                Content of page 5
+                <a href="#" onclick="return show('Page6','Page5');">Next</a>
+                <a href="#" onclick="return show('Page1','Page5');">Start Over</a>
+              </div>
+
+              <div id="Page6" style="display:none">
+                  Content of page 6
+                  <a href="#" onclick="return show('Page1','Page6');">Start Over</a>
+                </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
