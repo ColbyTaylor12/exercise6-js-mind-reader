@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>The Gypsy</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,40 +13,77 @@
     <!-- Local Stylesheet -->
     <link rel="stylesheet" href="/css/style.css">
   </head>
-  <body>
+  <body  style="background-color: gray">
 
       <div id="Page1">
-          Content of page 1
-          <a href="#" onclick="return show('Page2','Page1');">Next</a>
+          <div class="row justify-content-center">
+              <div class="col-sm-3 text-center">
+          <h1>I bet I can read your mind!</h1>
+          <a href="#" class= "mt-5 btn btn-primary btn-large" onclick="return show('Page2','Page1');">Next</a>
+              </div>
+            </div>
         </div>
       
         <div id="Page2" style="display:none">
-          Content of page 2
-          <a href="#" onclick="return show('Page3','Page2');">Next</a>
-          <a href="#" onclick="return show('Page1','Page2');">Start Over</a>
+            <div class="row justify-content-center">
+                <div class="col-sm-3 text-center">
+          <h2>Pick a number from 01 - 99</h2>
+          <a href="#" class= "mt-5 mb-5 btn btn-primary btn-large" onclick="return show('Page3','Page2');">Next</a>
+          <h4>When you have your number click next.</h4>
+          <a href="#" class= "mt-5 btn btn-danger btn-large" onclick="return show('Page1','Page2');">Start Over</a>
+                </div>
+              </div>
         </div>
       
         <div id="Page3" style="display:none">
-            Content of page 3
-            <a href="#" onclick="return show('Page4','Page3');">Next</a>
-            <a href="#" onclick="return show('Page1','Page3');">Start Over</a>
+            <div class="row justify-content-center">
+                <div class="col-sm-3 text-center">
+            <h2>Add both digits together to get a new number.</h2>
+            <a href="#" class= "mt-5 mb-5 btn btn-primary btn-large" onclick="return show('Page4','Page3');">Next</a>
+            <h4>Ex: 14 is 1 + 4 = 5.</h4>
+            <h4>Click next to proceed.</h4>
+            <a href="#" class= "mt-5 btn btn-danger btn-large" onclick="return show('Page1','Page3');">Start Over</a>
+                </div>
+            </div>
           </div>
 
           <div id="Page4" style="display:none">
-              Content of page 4
-              <a href="#" onclick="return show('Page5','Page4');">Next</a>
-              <a href="#" onclick="return show('Page1','Page4');">Start Over</a>
+              <div class="row justify-content-center">
+                  <div class="col-sm-3 text-center">
+              <h2>Subtract your new number from the original number.</h2>
+              <a href="#" class= "mt-5 mb-5 btn btn-primary btn-large" onclick="return show('Page5','Page4');">Next</a>
+              <h4>Ex: 14 - 5 = 9.</h4>
+              <h4>Click next to proceed.</h4>
+              <a href="#" class= "mt-5 btn btn-danger btn-large" onclick="return show('Page1','Page4');">Start Over</a>
+                </div>
+              </div>
             </div>
 
             <div id="Page5" style="display:none">
-                Content of page 5
-                <a href="#" onclick="return show('Page6','Page5');">Next</a>
-                <a href="#" onclick="return show('Page1','Page5');">Start Over</a>
+                <div class="row justify-content-center">
+                    <div class="col-sm-3 text-center">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-3 text-center">
+                                <ul id="aList">
+
+                                </ul>
+                          </div> 
+                        </div>
+                <a href="#" class= "mt-5 mb-5 btn btn-primary btn-large" onclick="return show('Page6','Page5');">Reveal</a>
+                <h4>Find your new number.</h4>
+                <h4>Note the symbol beside the number.</h4>
+                <a href="#" class= "mt-5 btn btn-danger btn-large" onclick="return show('Page1','Page5');">Start Over</a>
+                    </div>
+                </div>
               </div>
 
               <div id="Page6" style="display:none">
-                  Content of page 6
-                  <a href="#" onclick="return show('Page1','Page6');">Start Over</a>
+                  <div class="row justify-content-center">
+                      <div class="col-sm-3 text-center">
+                  <h1>Content of page 6</h1>
+                  <a href="#" class= "mt-5 btn btn-danger btn-large" onclick="return show('Page1','Page6');">Start Over</a>
+                    </div>
+                  </div>
                 </div>
       
     <!-- Optional JavaScript -->
